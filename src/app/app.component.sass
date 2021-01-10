@@ -1,0 +1,312 @@
+.head-space
+    padding: 25px
+    
+.btn:focus, .btn.focus 
+    outline: 0
+    box-shadow: 0 0 0 0.1rem rgba(88, 88, 88, 0.25)
+
+.form-control:focus 
+    border-color: rgba(88, 88, 88, 0)
+    box-shadow: 0 0 0 0.1rem rgba(88, 88, 88, 0.25)
+
+#tabs h6.section-title
+    color: #000000
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active 
+    color: #000000
+    background-color: transparent
+    border-color: transparent transparent #ffffff
+    border-bottom: 2px solid #D833D5 !important
+    font-size: 12px
+    font-weight: bold
+
+#tabs .nav-tabs .nav-link
+    border: 1px solid transparent
+    border-top-left-radius: .25rem
+    border-top-right-radius: .25rem
+    color: #000000
+    font-size: 12px
+    
+
+#ongoing-tab
+    width: 290px
+    text-align: start
+
+::-webkit-input-placeholder
+  font-size: 12px
+  font-weight: 400
+  color: #838383
+
+:-ms-input-placeholder
+  font-size: 12px
+  font-weight: 400
+  color: #838383
+
+::placeholder
+  font-size: 12px
+  font-weight: 400
+  color: #838383
+
+.dropdown-toggle::after
+    display: none
+
+//search box
+.search-btn
+    position: absolute
+    margin: 0
+    color: #6d6d6d
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.search-box
+    position: relative
+    height: 30px
+    width: 40px
+    background: #eeeeee
+    border: 1px solid #cfcfcf
+    border-radius: 0px 5px 5px 0px
+
+// information stripe 
+.info-stripe
+    position: relative
+    padding: 5px
+    box-shadow: 0px 0px 2px #adadad
+    border-radius: 2px
+    height: 55px
+    background: white
+    border-left: 4px solid #33b233
+
+.info-center
+    position: absolute
+    width: 100%
+    top: 50%
+    transform: translateY(-50%)
+    margin: 0
+
+.title-stripe
+    height: 35px !important
+    background: #ececec
+
+// colors 
+.light-green
+    color: #33b233
+
+.light-grey
+    color: #757575
+
+// font sizes 
+.font-10
+    font-size: 10px
+
+.font-12
+    font-size: 12px
+
+.font-20
+    font-size: 20px
+
+.font-bold
+    font-size: 12px
+    font-weight: 500
+
+// font weights
+.font-400
+    font-weight: 400
+
+.font-600
+    font-weight: 600
+
+.font-700
+    font-weight: 700
+
+
+//icons
+.icon-center
+    padding: 0px 10px
+    margin: auto 0
+    width: 30px
+
+// avatat
+.avatar-round
+    height: 45px
+    width: 45px
+    border-radius: 90px
+
+.avatar-r-corner
+    height: 45px
+    width: 45px
+    border-radius: 5px
+    
+.avatar-round-s
+    height: 35px
+    width: 35px
+    border-radius: 90px
+    
+.avatar-square
+    height: 35px
+    width: 55px
+
+// padings & margins 
+.p-header
+    padding: 10px 0
+.p-title
+    padding: 0 25px
+.p-name
+    padding: 0 10px
+.p-img
+    padding: 0px 5px
+.p-5
+    padding: 5px !important
+.p-10
+    padding: 10px
+
+//height & width
+.h-30
+    height: 30px
+.h-35
+    height: 35px
+
+// information card
+.info-card
+    position: relative
+    box-shadow: 0px 0px 2px #adadad
+    border-radius: 2px
+    height: auto
+    background: white
+.obj-fit
+    object-fit: cover
+    width: 100%
+hr
+    margin: 10px 10px 0
+
+//responsive only for <768px
+@media screen and (max-width:768px)
+  .info-head
+    position: relative
+
+  .info-head .info-sort
+    position: absolute
+    padding: 10px
+    text-align: end
+    padding-top: 50px
+
+  .dropdown-toggle
+    padding: 0 5px
+
+  .fa-chevron-down, .fa-ellipsis-v
+    padding: 5px
+    width: 20px
+
+  .p-header
+    padding-top: 50px
+
+  .info-head .info-sort .font-400
+    flex: 0 0 75%
+    max-width: 75%
+    padding: 0
+
+  .info-head .info-sort .p-0
+    flex: 0 0 25%
+    max-width: 25%
+
+  .info-search
+    position: absolute
+    flex: 0 0 100%
+    max-width: 100%
+
+  .col-2, .p-header
+    max-width: 100%
+    flex: 0 0 100%
+
+  .head-space .col-4
+    max-width: 100%
+    flex: 0 0 100%
+    padding: 0 !important
+
+  .info-center .col-1
+    max-width: 25%
+    flex: 0 0 25%
+    text-align: left !important
+    margin: auto 0 !important
+
+  .info-center .col-2
+    max-width: 50%
+    flex: 0 0 50%
+
+  .info-stripe .col-3
+    max-width: 100%
+    flex: 0 0 100%
+    padding: 10px
+
+  .info-stripe .col-3
+    max-width: 100%
+    flex: 0 0 100%
+    padding: 20px 10px 0px
+
+  .info-detail
+    max-width: 40% !important
+    flex: 0 0 40% !important
+
+  .avatar
+    max-width: 20% !important
+    flex: 0 0 20% !important
+
+  .info-center .desc
+    max-width: 50% !important
+    flex: 0 0 50% !important
+    padding: 0 10px
+    margin: auto 0 !important
+
+  .info-center .desc-s
+    max-width: 40% !important
+    flex: 0 0 40% !important
+    padding: 0 10px
+    margin: auto 0 !important
+
+  .phn-num
+    padding: 0px 10px 20px !important
+    margin: 0 !important
+    max-width: 100% !important
+    flex: 100% !important
+    text-align: left !important
+
+  .item-num
+    max-width: 20% !important
+    flex: 0 0 20% !important
+    padding: 0 10px !important
+
+  .item-num-s
+    max-width: 10% !important
+    flex: 0 0 10% !important
+    padding: 0 10px !important
+
+  .info-alert
+    flex: 0 0 50% !important
+    max-width: 50% !important
+    padding: 0px 25px
+    font-size: 15px
+
+  .info-price
+    flex: 0 0 75% !important
+    max-width: 75% !important
+    font-size: 15px
+
+  .info-name
+    font-size: 15px
+
+  .info-drop
+    flex: 0 0 25% !important
+    max-width: 25% !important
+    padding: 0
+
+  .info-stripe
+    height: 185px
+
+  .info-stripe-s
+    height: 80px
+
+  .info-center
+    width: auto
+ 
+  
+
