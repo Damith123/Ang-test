@@ -1,22 +1,23 @@
+@import "../assets/styles/colors.sass"
 .head-space
     padding: 25px
     
 .btn:focus, .btn.focus 
     outline: 0
-    box-shadow: 0 0 0 0.1rem rgba(88, 88, 88, 0.25)
+    box-shadow: 0 0 0 0.1rem $grey
 
 .form-control:focus 
-    border-color: rgba(88, 88, 88, 0)
-    box-shadow: 0 0 0 0.1rem rgba(88, 88, 88, 0.25)
+    border-color: $dark-grey
+    box-shadow: 0 0 0 0.1rem $grey
 
 #tabs h6.section-title
-    color: #000000
+    color: $black
 
 #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active 
-    color: #000000
+    color: $black
     background-color: transparent
-    border-color: transparent transparent #ffffff
-    border-bottom: 2px solid #D833D5 !important
+    border-color: transparent transparent $white
+    border-bottom: 2px solid $pink !important
     font-size: 12px
     font-weight: bold
 
@@ -24,7 +25,7 @@
     border: 1px solid transparent
     border-top-left-radius: .25rem
     border-top-right-radius: .25rem
-    color: #000000
+    color: $black
     font-size: 12px
     
 
@@ -35,17 +36,17 @@
 ::-webkit-input-placeholder
   font-size: 12px
   font-weight: 400
-  color: #838383
+  color: $light-grey
 
 :-ms-input-placeholder
   font-size: 12px
   font-weight: 400
-  color: #838383
+  color: $light-grey
 
 ::placeholder
   font-size: 12px
   font-weight: 400
-  color: #838383
+  color: $light-grey
 
 .dropdown-toggle::after
     display: none
@@ -54,7 +55,7 @@
 .search-btn
     position: absolute
     margin: 0
-    color: #6d6d6d
+    color: $light-grey
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
@@ -63,19 +64,19 @@
     position: relative
     height: 30px
     width: 40px
-    background: #eeeeee
-    border: 1px solid #cfcfcf
+    background: $white-grey
+    border: 1px solid $shine-grey
     border-radius: 0px 5px 5px 0px
 
 // information stripe 
 .info-stripe
     position: relative
     padding: 5px
-    box-shadow: 0px 0px 2px #adadad
+    box-shadow: 0px 0px 2px $light-grey
     border-radius: 2px
     height: 55px
     background: white
-    border-left: 4px solid #33b233
+    border-left: 4px solid $light-green
 
 .info-center
     position: absolute
@@ -86,14 +87,14 @@
 
 .title-stripe
     height: 35px !important
-    background: #ececec
+    background: $white-grey
 
 // colors 
 .light-green
-    color: #33b233
+    color: $light-green
 
 .light-grey
-    color: #757575
+    color: $light-grey
 
 // font sizes 
 .font-10
@@ -169,7 +170,7 @@
 // information card
 .info-card
     position: relative
-    box-shadow: 0px 0px 2px #adadad
+    box-shadow: 0px 0px 2px $light-grey
     border-radius: 2px
     height: auto
     background: white
