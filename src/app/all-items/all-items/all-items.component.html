@@ -1,0 +1,328 @@
+<div class="container">
+    <mat-expansion-panel class="border-green-left">
+        <mat-expansion-panel-header class="m-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1 p-0 avatar">
+                        <img src="assets/avatar.png" alt="Avatar" class="avatar-round">
+                    </div>
+                    <div class="col-sm-1 m-auto font-bold">#42084</div>
+                    <div class="col-sm-3 m-auto">
+                        <div class="row font-15 font-bold">Collection</div>
+                        <div class="row font-10">20 Dec 2020 | 10:00 am - 11:00 am</div>
+                    </div>
+                    <div class="col-sm-3 m-auto">
+                        <div class="row font-bold">
+                        <i class="fa fa-home light-grey icon-center" aria-hidden="true">
+                        </i>La pizza di don corleone</div>
+                        <div class="row font-10">
+                        <i class="fa fa-map-marker light-grey icon-center" aria-hidden="true">
+                        </i>9 Park Avenue, KILMARNOCKA10 3HZ</div>
+                    </div>
+                    <div class="col-sm-2 m-auto">
+                        <div class="font-bold">
+                        <i class="fa fa-phone light-grey icon-center" aria-hidden="true">
+                        </i>+7894337468
+                        </div>
+                    </div>
+                    <div class="col-sm-1 m-auto">
+                        <div class="font-bold light-green">Completed</div>
+                    </div>
+                    <div class="col-sm-1 m-auto">
+                        <div class="font-bold">£ 34.00</div>
+                    </div>
+                </div>   
+            </div>
+        </mat-expansion-panel-header>
+        <mat-action-row>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 m-auto text-left">
+                        <div>
+                            <mat-form-field>
+                                <mat-label>Notes:</mat-label>
+                                <input matInput type="text">
+                            </mat-form-field>
+                        </div>
+                        </div>
+                    <div class="col-sm-6 m-auto text-right">
+                        <button mat-button color="warn">Dismiss</button>
+                        <button mat-button color="primary">Save</button>
+                    </div>
+                </div>   
+            </div>
+        </mat-action-row>
+    </mat-expansion-panel>
+</div>
+  
+<div class="h-35"></div>
+  
+<div class="container m-b-1">
+    <mat-expansion-panel class="border-green-left">
+        <mat-expansion-panel-header class="m-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1 p-0 avatar">
+                        <img src="assets/avatar.png" alt="Avatar" class="avatar-round">
+                    </div>
+                    <div class="col-sm-1 m-auto font-bold">#42084</div>
+                    <div class="col-sm-3 m-auto">
+                        <div class="row font-15 font-bold">Scehdule Delivery</div>
+                        <div class="row font-10">20 Dec 2020 | 10:00 am - 11:00 am</div>
+                    </div>
+                    <div class="col-sm-3 m-auto">
+                        <div class="row font-bold">
+                        <i class="fa fa-home light-grey icon-center" aria-hidden="true">
+                        </i>La pizza di don corleone</div>
+                        <div class="row font-10">
+                        <i class="fa fa-map-marker light-grey icon-center" aria-hidden="true">
+                        </i>9 Park Avenue, KILMARNOCKA10 3HZ</div>
+                    </div>
+                    <div class="col-sm-2 m-auto">
+                        <div class="font-bold">
+                        <i class="fa fa-phone light-grey icon-center" aria-hidden="true">
+                        </i>+7894337468
+                        </div>
+                    </div>
+                    <div class="col-sm-1 m-auto">
+                        <div class="font-bold light-green">Completed</div>
+                    </div>
+                    <div class="col-sm-1 m-auto">
+                        <div class="font-bold">£ 34.00</div>
+                    </div>
+                </div>   
+            </div>
+        </mat-expansion-panel-header>
+        <mat-action-row>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 m-auto text-left">
+                        <div>
+                        <mat-form-field>
+                            <mat-label>Notes:</mat-label>
+                            <input matInput type="text">
+                        </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 m-auto text-right">
+                        <button mat-button color="warn">Dismiss</button>
+                        <button mat-button color="primary">Save</button>
+                    </div>
+                </div>   
+            </div>
+        </mat-action-row>
+    </mat-expansion-panel>
+</div>
+ 
+<div class="container m-b-1">
+    <mat-expansion-panel disabled hideToggle class="border-green-left">
+        <mat-expansion-panel-header class="cursor-d p-r-10 m-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1 p-0 avatar">
+                        <img src="assets/avatar.png" alt="Avatar" class="avatar-r-corner">
+                    </div>
+                    <div class="col-sm-1 m-auto font-bold">1 x</div>
+                    <div class="col-sm-3 m-auto">
+                        <div class="row font-15 font-bold">Beef Pepperoni Pizza</div>
+                    </div>
+                    <div class="col-sm-6 m-auto"></div>
+                    <div class="col-sm-1 m-auto text-right">
+                        <div class="font-bold">£ 34.00</div>
+                    </div>
+                </div>   
+            </div>
+            <button mat-icon-button [matMenuTriggerFor]="menuOrder" aria-label="Menu">
+                <mat-icon class="font-15">more_vert</mat-icon>
+            </button>
+            <mat-menu #menuOrder="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>add_circle</mat-icon>
+                    <span>Add Order</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon color="warn">delete</mat-icon>
+                    <span>Remove</span>
+                </button>
+            </mat-menu>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+</div>
+
+<div class="container info">
+    <mat-card class="border-green-left sub-header radius-0">
+        <div class="font-12 w-500">Options</div>
+    </mat-card>
+</div>
+
+<div class="container m-b-1">
+    <mat-expansion-panel disabled hideToggle class="border-green-left">
+        <mat-expansion-panel-header class="cursor-d p-r-10 m-5">
+            <div class="container m-auto">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="row font-15 font-bold">Beef Pepperoni Pizza</div>
+                    </div>
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-1 text-right">
+                        <div class="font-bold">£ 34.00</div>
+                    </div>
+                </div>   
+            </div>
+            <button mat-icon-button [matMenuTriggerFor]="menuOrder" aria-label="Menu">
+                <mat-icon class="font-15">more_vert</mat-icon>
+            </button>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+</div>
+  
+<div class="container info">
+    <mat-card class="border-green-left sub-header radius-0">
+        <div class="font-12 w-500">Add-ons</div>
+    </mat-card>
+</div>
+  
+<div class="container m-b-1">
+    <mat-expansion-panel disabled hideToggle class="border-green-left">
+        <mat-expansion-panel-header class="cursor-d p-r-10 m-5">
+            <div class="container m-auto">
+                <div class="row">
+                    <div class="col-sm-1 font-bold">1 x</div>
+                    <div class="col-sm-3 ">
+                        <div class="row font-15 font-bold">Beef Pepperoni Pizza</div>
+                    </div>
+                    <div class="col-sm-7 m-auto"></div>
+                    <div class="col-sm-1 m-auto text-right">
+                        <div class="font-bold">£ 34.00</div>
+                    </div>
+                </div>   
+            </div>
+            <button mat-icon-button [matMenuTriggerFor]="menuOrder" aria-label="Menu">
+                <mat-icon class="font-15">more_vert</mat-icon>
+            </button>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+</div>
+  
+<div class="container m-b-1">
+    <mat-expansion-panel disabled hideToggle class="border-green-left">
+        <mat-expansion-panel-header class="cursor-d p-r-10 m-5">
+            <div class="container m-auto">
+                <div class="row">
+                    <div class="col-sm-1 font-bold">1 x</div>
+                    <div class="col-sm-3 ">
+                        <div class="row font-15 font-bold">Beef Pepperoni Pizza</div>
+                    </div>
+                    <div class="col-sm-7 m-auto"></div>
+                    <div class="col-sm-1 m-auto text-right">
+                        <div class="font-bold">£ 34.00</div>
+                    </div>
+                </div>   
+            </div>
+            <button mat-icon-button [matMenuTriggerFor]="menuOrder" aria-label="Example icon-button with a menu">
+                <mat-icon class="font-15">more_vert</mat-icon>
+            </button>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+</div>
+  
+<div class="container info">
+    <mat-card class="border-green-left sub-header radius-0">
+        <div class="font-12 w-500">My Product Note</div>
+    </mat-card>
+</div>
+  
+<div class="container">
+    <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" class="border-green-left white-back" rowHeight="220px">
+        <mat-grid-tile class="white-back">
+            <mat-card class="p-5 m-5">            
+                <div class="row m-auto h-35">
+                    <div class="col m-auto font-bold">Jon Lee</div>
+                    <div class="col m-auto text-right font-12">24:45 | 20 Jan 21</div>
+                </div>
+                <div class="row m-auto">
+                    <div mat-card-avatar class="avatar-card"></div>
+                    <div class="col-9 font-10 p-name">Great dashboard, many functions to adjust the 
+                        different menu and order controlling. The reporting functions are perfect, we can see how many 
+                        dishes and beverages are in stock and also a list of the general sales. </div>
+                </div>
+                <hr/>
+                <div class="row m-auto p-10">
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                </div>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile class="white-back">
+            <mat-card class="p-5 m-5">            
+                <div class="row m-auto h-35">
+                    <div class="col m-auto font-bold">Jon Lee</div>
+                    <div class="col m-auto text-right font-12">24:45 | 20 Jan 21</div>
+                </div>
+                <div class="row m-auto">
+                    <div mat-card-avatar class="avatar-card"></div>
+                    <div class="col-9 font-10 p-name">Great dashboard, many functions to adjust the 
+                        different menu and order controlling. The reporting functions are perfect, we can see how many 
+                        dishes and beverages are in stock and also a list of the general sales. </div>
+                </div>
+                <hr/>
+                <div class="row m-auto p-10">
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                </div>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile class="white-back">
+            <mat-card class="p-5 m-5">            
+                <div class="row m-auto h-35">
+                    <div class="col m-auto font-bold">Jon Lee</div>
+                    <div class="col m-auto text-right font-12">24:45 | 20 Jan 21</div>
+                </div>
+                <div class="row m-auto">
+                    <div mat-card-avatar class="avatar-card"></div>
+                    <div class="col-9 font-10 p-name">Great dashboard, many functions to adjust the 
+                        different menu and order controlling. The reporting functions are perfect, we can see how many 
+                        dishes and beverages are in stock and also a list of the general sales. </div>
+                </div>
+                <hr/>
+                <div class="row m-auto p-10">
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                    <div class="col p-img">
+                        <img src="assets/avatar.png" alt="Avatar" class="text-center m-auto avatar-square obj-fit">
+                    </div>
+                </div>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<div class="h-35"></div>
+  

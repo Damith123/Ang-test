@@ -1,5 +1,5 @@
-@import "../assets/styles/colors.sass"
-@import "../assets/styles/utilities.sass"
+@import "../../../assets/styles/colors.sass"
+@import "../../../assets/styles/utilities.sass"
 
 .head-space
   padding: 25px
@@ -36,7 +36,7 @@ button:focus
   display: flex
   flex-direction: column
   justify-content: center
-  background: $shine-grey
+  background: $white-grey
   height: 35px
   padding: 0 25px
 
@@ -50,7 +50,7 @@ button:focus
 .form-control:focus 
     border-color: $dark-grey
     box-shadow: 0 0 0 0.1rem $grey
-
+    
 #ongoing-tab
     width: 290px
     text-align: start
@@ -97,6 +97,9 @@ button:focus
 .light-grey
     color: $light-grey
 
+.white-back
+    background: $white
+
 //icons
 .icon-center
     padding: 0px 10px
@@ -130,11 +133,18 @@ button:focus
     border-radius: 2px
     height: auto
     background: white
+
 .obj-fit
     object-fit: cover
     width: 100%
+
 hr
     margin: 10px 10px 0
+
+.avatar-card
+    background-image: url("../../../assets/avatar.png")
+    background-size: cover
+    margin: 5px
 
 //responsive only for <768px
 @media screen and (max-width:768px)
